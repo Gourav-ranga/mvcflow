@@ -27,6 +27,19 @@ public class HomeController
 
 		return "home";
 	}
+	
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
+	public String register(Locale locale, Model model) {
+		System.out.println("Home Page Requested, locale = " + locale);
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+
+		String formattedDate = dateFormat.format(date);
+
+		model.addAttribute("serverTime", formattedDate);
+
+		return "register";
+	}
 
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
 	public String user(@Validated User user, Model model) {
