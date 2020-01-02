@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h2>Time on Server : ${serverTime}</h2>
+
 <form action="user" method="post">
 	<h1>Student Registration Panel</h1>
 	ID : <input type="text" name="id"><br>

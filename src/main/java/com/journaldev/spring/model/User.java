@@ -1,7 +1,11 @@
 package com.journaldev.spring.model;
 
-public class User
+import java.io.Serializable;
+
+public class User implements Serializable
 {
+	private static final long serialVersionUID = 1L;
+	
 	private String id;
 	private String fname;
 	private String lname;
@@ -32,6 +36,10 @@ public class User
 	}
 	public void setAge(String age) {
 		this.age = age;
+	}
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", fname=" + fname + ", lname=" + lname + ", age=" + age + "]";
 	}
 
 	
