@@ -1,10 +1,8 @@
 package com.journaldev.spring.model;
 
-import java.io.Serializable;
-
-public class User implements Serializable
+public class User 
 {
-	private static final long serialVersionUID = 1L;
+	
 	
 	private String id;
 	private String fname;
@@ -39,7 +37,7 @@ public class User implements Serializable
 	}
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", fname=" + fname + ", lname=" + lname + ", age=" + age + "]";
+		return "	 [id=" + id + ", fname=" + fname + ", lname=" + lname + ", age=" + age + "]";
 	}
 
 	
