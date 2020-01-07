@@ -1,7 +1,10 @@
 package com.journaldev.spring.dao;
 import java.util.logging.Logger;
+
 import javax.ws.rs.core.Response;
+
 import org.springframework.stereotype.Component;
+
 import com.journaldev.spring.model.User;
 
 @Component
@@ -17,8 +20,8 @@ public class StudentDaoImpl implements StudentDao
 	 logger.info("------------------------------------------------");
 	 logger.info("Id : "+userdata.getId());
 	 logger.info("getFname : "+userdata.getFname());
-	 logger.info("getFname : "+userdata.getLname());
-	 logger.info("getFname : "+userdata.getAge());
+	 logger.info("getLname : "+userdata.getLname());
+	 logger.info("getAge : "+userdata.getAge());
 	 logger.info("------------------------------------------------");
 	 logger.info("In StudentDaoImpl: getStudentDetail()");
 	 
@@ -29,7 +32,8 @@ public class StudentDaoImpl implements StudentDao
 		 * {userdata.getId(),userdata.getFname(),userdata.getLname(),userdata.getAge()},
 		 * new BeanPropertyRowMapper<User>(User.class));
 		 */
-
+		 
+	 
 	 
 	 return response;
  }
